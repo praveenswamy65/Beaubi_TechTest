@@ -1,5 +1,5 @@
 {
-  "base": "semantic\\",
+  "base": "src\\semantic\\",
   "paths": {
     "source": {
       "config": "src/theme.config",
@@ -15,8 +15,8 @@
     },
     "clean": "dist/"
   },
-  "permission": true,
-  "autoInstall": true,
+  "permission": false,
+  "autoInstall": false,
   "rtl": false,
   "version": "2.8.4"
 }

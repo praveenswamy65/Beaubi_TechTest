@@ -11,6 +11,7 @@
 @fontWeight: @headerFontWeight;
 @lineHeight: @headerLineHeight;
 @lineHeightOffset: @headerLineHeightOffset;
+
 @topMargin: @headerTopMargin;
 @bottomMargin: @headerBottomMargin;
 @margin: @topMargin 0 @bottomMargin;
