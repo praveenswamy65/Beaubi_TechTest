@@ -5,9 +5,8 @@ const path = require('path');
 const port = process.env.PORT || 8080;
 const app = express();
 const bodyParser = require('body-parser');
-//const main = require('./src/components/Forms/Addproducts')
-const db = require('./models/index.js');
-const prodController = require('./controllers/index');
+//const db = require('./src/models/index.js');
+const prodController = require('./src/controllers/index');
 app.use(favicon(__dirname + '/build/favicon.ico'));
 // the __dirname is the current directory from where the script is running
 app.use(express.static(__dirname));

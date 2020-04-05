@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="82fb80e4-8845-4641-9e07-9e8e76866dfe" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/components/Forms/Addproducts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/migrations/20200405152458-create-brands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/brands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/20200405152458-create-brands.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/brands.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Forms/ProductReq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/ProductReq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
@@ -21,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1a33nVGRI0aFvjC8zR7TfdTKtoP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -48,8 +60,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\prave\PycharmProjects\beaubi_techtest\src\components\Images" />
       <recent name="C:\Users\prave\PycharmProjects\beaubi_techtest\src" />
+      <recent name="C:\Users\prave\PycharmProjects\beaubi_techtest\src\components\Images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -78,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585950616631</updated>
       <workItem from="1585950618830" duration="38678000" />
-      <workItem from="1586079657227" duration="32122000" />
+      <workItem from="1586079657227" duration="34270000" />
     </task>
     <servers />
   </component>
