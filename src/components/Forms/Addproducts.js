@@ -33,13 +33,6 @@ export default async function getNewArrivals(request, response) {
         console.log(err, res)
         pool.end()
     })
-
-    client.connect()
-    client.query('SELECT NOW()', (err, res) => {
-        console.log(err, res)
-        client.end()
-    })
-
 }
 
 
