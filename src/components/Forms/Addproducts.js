@@ -1,8 +1,8 @@
 import React from 'react';
 const Pool = require('pg-pool');
 const url = require('url')
-
-const params = url.parse(process.env.DATABASE_URL);
+const connectionString = 'postgres://pvnbotlxjwpmcy:12463bc7f7c177094af39b1b3d28afd1a97eab88bf2d7d6b37c0864a0fbe0bde@ec2-52-87-58-157.compute-1.amazonaws.com:5432/d130271iijru7i'
+const params = url.parse(connectionString);
 const auth = params.auth.split(':');
 
 const config = {
