@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="82fb80e4-8845-4641-9e07-9e8e76866dfe" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/components/Forms/Addproducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Forms/ProductReq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/ProductReq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
@@ -23,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1a33nVGRI0aFvjC8zR7TfdTKtoP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -80,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585950616631</updated>
       <workItem from="1585950618830" duration="38678000" />
-      <workItem from="1586079657227" duration="7958000" />
+      <workItem from="1586079657227" duration="8214000" />
     </task>
     <servers />
   </component>
