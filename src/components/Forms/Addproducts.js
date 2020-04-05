@@ -1,21 +1,23 @@
 //import React from 'react';
 const {Pool, Client} = require('pg')
+const connectionString = 'postgres://pvnbotlxjwpmcy:12463bc7f7c177094af39b1b3d28afd1a97eab88bf2d7d6b37c0864a0fbe0bde@ec2-52-87-58-157.compute-1.amazonaws.com:5432/d130271iijru7i'
 const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'products',
-    password: 'admin',
-    port: 5432,
+    connectionString: connectionString,
+})
+const client = new Client({
+    connectionString: connectionString,
 })
 
-async function getNewArrivals (request, response) {
-    console.log('Request for new arrivals received');
-    pool.query('SELECT * FROM brands', (error, results) => {
-            if (error) {
-                throw error
-            }
-            //response.status(200).json(results.rows),
-                response.send(results.rows);
+async function getNewArrivals(request, response) {
+    pool.query('SELECT NOW()', (err, res) => {
+        console.log(err, res)
+        pool.end()
+    })
+
+    client.connect()
+    client.query('SELECT NOW()', (err, res) => {
+        console.log(err, res)
+        client.end()
     })
 
 }

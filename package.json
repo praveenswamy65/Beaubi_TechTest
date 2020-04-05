@@ -18,7 +18,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.0.1",
-    "body-parser": "latest"
+    "body-parser": "latest",
+    "dotenv": "latest"
   },
   "engines": {
     "node": "13.3.0",
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "pg-promise": "^10.5.0",
     "semantic-ui-react": "^0.88.2"
   }
 }
