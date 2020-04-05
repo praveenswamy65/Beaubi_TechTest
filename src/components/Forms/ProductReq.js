@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Form} from 'semantic-ui-react';
-const prodController = require('../../../controllers/index');
+import prodController from '../../../controllers/index';
+//const prodController = require('../../../controllers/index');
 const size = 'large';
 
 export default class ProductReq extends React.Component {
