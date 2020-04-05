@@ -1,4 +1,4 @@
-
+import React from 'react';
 const Pool = require('pg-pool');
 const url = require('url')
 
@@ -28,7 +28,7 @@ const pool = new Pool(config);
   }
 */
 
-async function getNewArrivals(request, response) {
+export default async function getNewArrivals(request, response) {
     pool.query('SELECT NOW()', (err, res) => {
         console.log(err, res)
         pool.end()
@@ -42,9 +42,4 @@ async function getNewArrivals(request, response) {
 
 }
 
-/*'module.export' allows multiple functions to be exported at the same time! No need to declare
- one by one (ie export const deleteUser(){}).
- With ES6 syntax, its getUsers instead of getUsers:getUsers*/
-module.exports = {
-    getNewArrivals,
-}
+
