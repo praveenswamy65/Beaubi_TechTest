@@ -28,7 +28,8 @@ const pool = new Pool(config);
   }
 */
 
-export default async function getNewArrivals(request, response) {
+export default function getNewArrivals(request, response) {
+    alert("Rcvd request");
     pool.query('SELECT NOW()', (err, res) => {
         console.log(err, res)
         pool.end()
