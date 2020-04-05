@@ -16,12 +16,12 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
   };
 
-  brands.sync({force: true}).then(function () {
+  /*brands.sync({force: true}).then(function () {
     return brands.create({
       brand_name: 'ssdf',
       product: 'Hsss',
       category:'ssdd'
     });
-  });
+  });*/
   return brands;
 };

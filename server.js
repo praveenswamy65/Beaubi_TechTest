@@ -20,16 +20,8 @@ app.get('/ping', function (req, res) {
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-//app.get('/users', main.getNewArrivals())
-//app.post('/crud', (req, res) => main.postTableData(req, res, db))
 app.post('/url',function(req, res){
   prodController.Create();
 });
 
-  //const url = req.body.url;
-  //let brand_name = "asd";
-  //let product = "sss";
-  //let category = "dffd";
-  //prodController.create();
-//});
 app.listen(port);

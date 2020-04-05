@@ -5,6 +5,8 @@
       <change afterPath="$PROJECT_DIR$/src/components/Forms/Addproducts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/brands.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/brands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Forms/ProductReq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/ProductReq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
@@ -22,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
   </component>
   <component name="ProjectId" id="1a33nVGRI0aFvjC8zR7TfdTKtoP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -79,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585950616631</updated>
       <workItem from="1585950618830" duration="38678000" />
-      <workItem from="1586079657227" duration="28871000" />
+      <workItem from="1586079657227" duration="31503000" />
     </task>
     <servers />
   </component>
