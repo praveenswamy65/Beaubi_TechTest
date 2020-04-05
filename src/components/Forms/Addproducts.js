@@ -29,7 +29,7 @@ const pool = new Pool(config);
 */
 
 export default function getNewArrivals(request, response) {
-    alert("Rcvd request");
+    alert(config);
     pool.query('SELECT NOW()', (err, res) => {
         console.log(err, res)
         pool.end()
