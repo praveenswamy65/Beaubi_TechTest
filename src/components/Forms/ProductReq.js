@@ -22,7 +22,7 @@ export default class ProductReq extends React.Component {
     addProducts = (e) => {
         e.preventDefault();
         alert("hej");
-        //addProducts.getNewArrivals();
+        addProducts.getNewArrivals();
         //alert(this.state.brand_name);
         //alert(this.state.product_name);
         //alert(this.state.category);//You will get vlue here
