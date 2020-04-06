@@ -23,10 +23,6 @@ export default class ProductReq extends React.Component {
     addProducts = (e) => {
         //e.preventDefault();
         alert("hej");
-        var bodyFormData = new FormData();
-        bodyFormData.set('brand', 'Fas');
-        bodyFormData.set('prod', 'Fad');
-        bodyFormData.set('cat', 'Faa');
         /*const formData = {
             brand: this.state.brand_name,
             prod: this.state.product_name,
@@ -36,8 +32,12 @@ export default class ProductReq extends React.Component {
         axios({
             method: 'post',
             url: '/url',
-            data: bodyFormData,
-            config: {headers: {'Content-Type': 'multipart/form-data'}}
+            data: {
+                "brand":"assd",
+                "prod":"akal",
+                "cat":"lop"
+            },
+            config: {headers: {'Content-Type': 'application/json'}}
         })
             .then(function (response) {
                 //handle success
