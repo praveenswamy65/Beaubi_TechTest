@@ -20,7 +20,7 @@ app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.post('/url',function(req, res){
-  prodController.Create();
+  prodController.Create(req,res);
 });
 
 app.listen(port);
