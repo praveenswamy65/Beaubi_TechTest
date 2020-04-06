@@ -21,7 +21,7 @@ export default class ProductReq extends React.Component {
     }
 
     addProducts = (e) => {
-        e.preventDefault();
+        //e.preventDefault();
         alert("hej");
         const formData = {
             brand: this.state.brand_name,
