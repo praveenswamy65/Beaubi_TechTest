@@ -23,20 +23,11 @@ export default class ProductReq extends React.Component {
     addProducts = (e) => {
         //e.preventDefault();
         alert("hej");
-        fetch('/url', {
-            method: 'post',
-            headers: {'Content-Type': 'application/json'},
-            body: {
-                "brand": this.state.brand_name,
-                "prod": this.state.product_name,
-                "cat": this.state.category
-            }
-        });
         /*const formData = {
             brand: this.state.brand_name,
             prod: this.state.product_name,
             cat: this.state.category,
-        }
+        }*/
         axios({
             method: 'post',
             url: '/url',
@@ -54,7 +45,7 @@ export default class ProductReq extends React.Component {
             .catch(function (response) {
                 //handle error
                 console.log(response);
-            });*/
+            });
     }
 
     render() {
