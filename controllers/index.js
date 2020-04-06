@@ -12,6 +12,7 @@ var Create=function (req,res) {
     if (err) console.log("Error in updating the product.");
     else {
       console.log("Please check the input fields.");
+
     }
   });
 }

@@ -29,6 +29,16 @@ export default class ProductReq extends React.Component {
             cat: this.state.category,
         }*/
         axios({
+            method: 'get',
+            url: '/ping',
+            data: {
+                "brand":"assd",
+                "prod":"akal",
+                "cat":"lop"
+            },
+            config: {headers: {'Content-Type': 'application/json'}}
+        });
+        axios({
             method: 'post',
             url: '/url',
             data: {
