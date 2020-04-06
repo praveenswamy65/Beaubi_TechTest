@@ -1,5 +1,5 @@
-//'use strict';
-var Sequelize = require("sequelize");
+'use strict';
+//var Sequelize = require("sequelize");
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('brands', {
