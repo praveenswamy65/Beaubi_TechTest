@@ -21,41 +21,27 @@ export default class ProductReq extends React.Component {
     }
 
     addProducts = (e) => {
-        //e.preventDefault();
-        alert("hej");
-        /*const formData = {
-            brand: this.state.brand_name,
-            prod: this.state.product_name,
-            cat: this.state.category,
-        }*/
         axios({
-            method: 'get',
-            url: '/ping',
-            data: {
-                "brand":"assd",
-                "prod":"akal",
-                "cat":"lop"
-            },
-            config: {headers: {'Content-Type': 'application/json'}}
-        });
-        /*axios({
+            async:false,
             method: 'post',
             url: '/url',
             data: {
-                "brand":"assd",
-                "prod":"akal",
-                "cat":"lop"
+                "brand_name":this.state.brand_name,
+                "product":this.state.product_name,
+                "category":this.state.category
             },
             config: {headers: {'Content-Type': 'application/json'}}
         })
             .then(function (response) {
                 //handle success
+                alert("Updated Product");
                 console.log(response);
             })
             .catch(function (response) {
                 //handle error
+                alert("failed to update the product");
                 console.log(response);
-            });*/
+            });
     }
 
     render() {

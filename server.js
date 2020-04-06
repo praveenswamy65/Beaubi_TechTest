@@ -2,7 +2,7 @@
 const express = require('express');
 const favicon = require('express-favicon');
 const path = require('path');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 const app = express();
 const bodyParser = require('body-parser');
 //const db = require('./src/models/index.js');
@@ -14,16 +14,16 @@ app.use(bodyParser.json())
 console.log(port);
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/ping', function (req, res) {
- //return res.send('pong');
- return res.send(req.get('BODY'));
+ return res.send('pong');
+ //return res.send(req.get('BODY'));
 });
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.post('/url',function(req, res){
   //console.log(req.body);
-  prodController.Create(req,res);
-  //return res.send(req.form.items());
+  prodController.createPost(req,res);
+  //return res.send('pong');
 });
 
 app.listen(port);
