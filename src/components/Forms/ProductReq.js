@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Form} from 'semantic-ui-react';
-//import prodController from '../../../controllers/index';
+import prodController from '../../controllers/index';
 const size = 'large';
 
 export default class ProductReq extends React.Component {
@@ -22,7 +22,7 @@ export default class ProductReq extends React.Component {
     addProducts = (e) => {
         e.preventDefault();
         alert("hej");
-  //      prodController.Create();
+        prodController.Create();
         //alert(this.state.brand_name);
         //alert(this.state.product_name);
         //alert(this.state.category);//You will get vlue here
