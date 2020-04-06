@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Form} from 'semantic-ui-react';
-import prodController from '../../controllers/index';
+import prodController from '../../../controllers/index';
 const size = 'large';
 
 export default class ProductReq extends React.Component {
