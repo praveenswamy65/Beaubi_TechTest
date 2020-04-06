@@ -1,5 +1,5 @@
+// Used Sequelize ORM using pg to interact with PostgreSQL for all DB queries
 'use strict';
-//var Sequelize = require("sequelize");
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('brands', {

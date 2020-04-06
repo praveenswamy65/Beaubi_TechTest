@@ -1,6 +1,9 @@
+// Create navigation bar using styled components
+// Added Beaubi Icon imported from Icon.js
 import React from 'react'
 import styled from "styled-components";
 import Icon from "../../Icon.js"
+
 const Navbar = (props) => {
   return (
     <>
@@ -16,6 +19,8 @@ const Navbar = (props) => {
 }
 
 export default Navbar
+
+// Styled components for Navigation bar and Flex container
 const NavBar = styled.div`
   position: fixed;
   width: 100%;

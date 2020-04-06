@@ -1,16 +1,18 @@
+// Created a form for product request task using "Semantic UI"
+// Used "axios"- a JS library for handling HTTP POST call (Better than "fetch" in handling the responses)
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Button, Form} from 'semantic-ui-react';
-//import prodController from '../../../controllers/index';
 const size = 'large';
 
 export default class ProductReq extends React.Component {
     constructor(props) {
         super(props);
+        //Defining state variables
         this.state = {brand_name: '', product_name: '', category: ''};
         this.handleChange = this.handleChange.bind(this);
     }
-
+    //Method to handle changes in the form
     handleChange(event) {
         const target = event.target;
         const value = target.value;
@@ -21,10 +23,11 @@ export default class ProductReq extends React.Component {
     }
 
     addProducts = (e) => {
+        //Http Post call which to update the new product using "createProduct" controller method
         axios({
             async:false,
             method: 'post',
-            url: '/url',
+            url: '/addProduct',
             data: {
                 "brand_name":this.state.brand_name,
                 "product":this.state.product_name,
@@ -53,21 +56,21 @@ export default class ProductReq extends React.Component {
                         <label>Brand</label>
                         <div className="eight wide field">
                             <input name='brand_name' type='text' value={this.state.brand_name} placeholder='Brand Name'
-                                   onChange={this.handleChange}/>
+                                   onChange={this.handleChange} required={true}/>
                         </div>
                     </Form.Field>
                     <Form.Field>
                         <label>Product</label>
                         <div className="eight wide field">
                             <input name='product_name' type='text' value={this.state.product_name}
-                                   placeholder='Product Name' onChange={this.handleChange}/>
+                                   placeholder='Product Name' onChange={this.handleChange} required={true}/>
                         </div>
                     </Form.Field>
                     <Form.Field>
                         <label>Category</label>
                         <div className="eight wide field">
                             <input name='category' type='text' value={this.state.category}
-                                   placeholder='Ex. Shampoo,cleanser,mascara...' onChange={this.handleChange}/>
+                                   placeholder='Ex. Shampoo,cleanser,mascara...' onChange={this.handleChange} required={true}/>
                         </div>
                     </Form.Field>
                     <Button type='submit' color={"facebook"}>Confirm</Button>

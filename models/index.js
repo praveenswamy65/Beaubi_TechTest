@@ -1,3 +1,4 @@
+// Auto created using Sequelize commands for establishing PostgreSQL DB connection
 'use strict';
 
 const fs = require('fs');
