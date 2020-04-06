@@ -4,7 +4,7 @@ var Create=function (req,res) {
   //let br = req.body.brand;
   //let pr = req.body.prod;
   //let ca = req.body.cat;
-  console.log(req.body);
+  alert("hello");
   models.create({
 
     brand_name: "sdfr",//req.formData.brand,
