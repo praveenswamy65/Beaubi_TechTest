@@ -3,6 +3,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Button, Form} from 'semantic-ui-react';
+
 const size = 'large';
 
 export default class ProductReq extends React.Component {
@@ -12,6 +13,7 @@ export default class ProductReq extends React.Component {
         this.state = {brand_name: '', product_name: '', category: ''};
         this.handleChange = this.handleChange.bind(this);
     }
+
     //Method to handle changes in the form
     handleChange(event) {
         const target = event.target;
@@ -25,24 +27,24 @@ export default class ProductReq extends React.Component {
     addProducts = (e) => {
         //Http Post call which to update the new product using "createProduct" controller method
         axios({
-            async:false,
+            async: false,
             method: 'post',
             url: '/addProduct',
             data: {
-                "brand_name":this.state.brand_name,
-                "product":this.state.product_name,
-                "category":this.state.category
+                "brand_name": this.state.brand_name,
+                "product": this.state.product_name,
+                "category": this.state.category
             },
             config: {headers: {'Content-Type': 'application/json'}}
         })
             .then(function (response) {
                 //handle success
-                alert("Updated Product");
+                alert("Product added successfully!!!");
                 console.log(response);
             })
             .catch(function (response) {
                 //handle error
-                alert("failed to update the product");
+                alert("Failed to add the product");
                 console.log(response);
             });
     }
@@ -53,24 +55,31 @@ export default class ProductReq extends React.Component {
                 <h2 className="ui header">Product Request</h2>
                 <Form size={size} onSubmit={this.addProducts}>
                     <Form.Field>
-                        <label>Brand</label>
+                        <div className="required field">
+                            <label>Brand</label>
+                        </div>
                         <div className="eight wide field">
                             <input name='brand_name' type='text' value={this.state.brand_name} placeholder='Brand Name'
                                    onChange={this.handleChange} required={true}/>
                         </div>
                     </Form.Field>
                     <Form.Field>
-                        <label>Product</label>
+                        <div className="required field">
+                            <label>Product</label>
+                        </div>
                         <div className="eight wide field">
                             <input name='product_name' type='text' value={this.state.product_name}
                                    placeholder='Product Name' onChange={this.handleChange} required={true}/>
                         </div>
                     </Form.Field>
                     <Form.Field>
-                        <label>Category</label>
+                        <div className="required field">
+                            <label>Category</label>
+                        </div>
                         <div className="eight wide field">
                             <input name='category' type='text' value={this.state.category}
-                                   placeholder='Ex. Shampoo,cleanser,mascara...' onChange={this.handleChange} required={true}/>
+                                   placeholder='Ex. Shampoo,cleanser,mascara...' onChange={this.handleChange}
+                                   required={true}/>
                         </div>
                     </Form.Field>
                     <Button type='submit' color={"facebook"}>Confirm</Button>

@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="82fb80e4-8845-4641-9e07-9e8e76866dfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20200406002850-create-brands.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/20200406002850-create-brands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/brands.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/brands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Btn.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Icon.js" afterDir="false" />
@@ -87,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585950616631</updated>
       <workItem from="1585950618830" duration="38678000" />
-      <workItem from="1586079657227" duration="66697000" />
+      <workItem from="1586079657227" duration="67493000" />
     </task>
     <servers />
   </component>
