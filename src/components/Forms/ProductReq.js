@@ -38,7 +38,7 @@ export default class ProductReq extends React.Component {
             },
             config: {headers: {'Content-Type': 'application/json'}}
         });
-        axios({
+        /*axios({
             method: 'post',
             url: '/url',
             data: {
@@ -55,7 +55,7 @@ export default class ProductReq extends React.Component {
             .catch(function (response) {
                 //handle error
                 console.log(response);
-            });
+            });*/
     }
 
     render() {

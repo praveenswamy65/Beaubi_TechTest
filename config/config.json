@@ -1,18 +1,10 @@
 {
   "development": {
-    "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres"
-  },
-  "production": {
-    "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres"
-  },
-  "local": {
-    "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres"
-  },
-  "test": {
-    "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres"
+    "username": "postgres",
+    "password": "admin",
+    "database": "products",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false
   }
 }
