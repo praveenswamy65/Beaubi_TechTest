@@ -1,6 +1,10 @@
 const models = require('../models').brands;
 var Create=function (req,res) {
-  //alert(req.body());
+
+  let br = req.body.brand;
+  let pr = req.body.prod;
+  let ca = req.body.cat;
+  alert(br);
   models.create({
 
     brand_name: "sdfr",//req.formData.brand,
