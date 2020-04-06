@@ -15,7 +15,7 @@ console.log(port);
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/ping', function (req, res) {
  //return res.send('pong');
- return res.send(req.body);
+ return res.send(req.body.data());
 });
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
@@ -23,7 +23,7 @@ app.get('/*', function (req, res) {
 app.post('/url',function(req, res){
   //console.log(req.body);
   prodController.Create(req,res);
-  return res.send(req.body);
+  //return res.send(req.body);
 });
 
 app.listen(port);
