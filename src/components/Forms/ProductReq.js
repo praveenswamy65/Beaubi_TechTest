@@ -23,22 +23,29 @@ export default class ProductReq extends React.Component {
     addProducts = (e) => {
         //e.preventDefault();
         alert("hej");
-        const formData = {
+        var bodyFormData = new FormData();
+        bodyFormData.set('brand', 'Fas');
+        bodyFormData.set('prod', 'Fad');
+        bodyFormData.set('cat', 'Faa');
+        /*const formData = {
             brand: this.state.brand_name,
             prod: this.state.product_name,
             cat: this.state.category,
-        }
+        }*/
+
         axios({
             method: 'post',
             url: '/url',
-            data: formData,
+            data: bodyFormData,
             config: {headers: {'Content-Type': 'multipart/form-data'}}
         })
             .then(function (response) {
                 //handle success
+                console.log(response);
             })
             .catch(function (response) {
                 //handle error
+                console.log(response);
             });
     }
 
