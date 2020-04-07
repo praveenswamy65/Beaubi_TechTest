@@ -14,16 +14,17 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 //Ping test for http test call
 app.get('/ping', function (req, res) {
- return res.send('pong');
+    return res.send('pong');
 });
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 //Http post call to add new product
-app.post('/addProduct',function(req, res){
-  //Controller function call
-  prodController.createProduct(req,res);
+app.post('/addProduct', function (req, res) {
+    //Controller function call
+    prodController.createProduct(req, res);
 });
+
 app.listen(port);
