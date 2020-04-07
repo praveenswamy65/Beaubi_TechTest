@@ -1,7 +1,7 @@
 Beaubi technical test mockup view
 ----
 
-This react application is developed using ReactJS and PostgreSQL for database operations. I used Semantic UI for form elements and styled components for navigation bar. Sequelize library is used for database connection and other operations.
+This application is developed using ReactJS library and PostgreSQL for database operations. I used Semantic UI for form elements and styled components for navigation bar. Sequelize library is used for database connection and other operations.
 
 ----
 The application is hosted on Heroku cloud platform and utilizes PostgreSQL-free dev version as an addon.</br>
