@@ -1,73 +1,26 @@
-<<<<<<< HEAD
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Beaubi technical test mockup view
 
-## Available Scripts
+This react application is developed using ReactJS and PostgreSQL for database operations. I used Semantic UI for form elements and styled components for navigation bar. Sequelize library is used for database connection and other operations.
 
-In the project directory, you can run:
+The application is hosted on Heroku cloud platform and utilizes PostgreSQL-free dev version as an addon.
+https://beaubi-new-app.herokuapp.com/
 
-### `npm start`
+Please monitor the database by adding server in pgAdmin desktop application using below credentials:
+PostgreSQL credentials for checking the data insertions:
+Host - ec2-35-171-31-33.compute-1.amazonaws.com
+Database - da3gv4t9s91uha
+User - pzfniipfxwskeh
+Port - 5432
+Password - ae4346f0ff7b353565cd8c00c8a979cafc54ccfa80f58a6e2c8730eaf1fe09c7
+URI - postgres://pzfniipfxwskeh:ae4346f0ff7b353565cd8c00c8a979cafc54ccfa80f58a6e2c8730eaf1fe09c7@ec2-35-171-31-33.compute-1.amazonaws.com:5432/da3gv4t9s91uha
+Heroku CLI - heroku pg:psql postgresql-animated-47289 --app beaubi-new-app
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I followed some blog posts from medium.com and other resources mentioned below in references for the task.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+References:
 
-### `npm test`
+1) Sequelize operations : https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize
+2) Semantic UI : https://semantic-ui.com/collections/form.html
+3) Axios for http post request : https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/
+4) Navigation bar : I used my portfolio application as reference.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# Beaubi_TechTest
-Building mockup view for Beaubi Technical Test.
->>>>>>> 5621b8da2395eba7470f7f9e0fac67fba709ed8a
