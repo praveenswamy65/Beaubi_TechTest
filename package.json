@@ -12,7 +12,7 @@
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "fomantic-ui": "^2.8.4",
-    "knex": "^0.20.13",
+    "knex": "^2.4.0",
     "path": "^0.12.7",
     "pg": "^6.4.2",
     "pg-hstore": "^2.3.3",
